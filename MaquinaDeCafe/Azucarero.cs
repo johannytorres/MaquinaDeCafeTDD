@@ -1,0 +1,27 @@
+﻿namespace MaquinaDeCafe
+{
+    public class Azucarero
+    {
+        private int cantidadDeAzucar;
+
+        public Azucarero(int cantidadDeAzucar)
+        {
+            this.cantidadDeAzucar = cantidadDeAzucar;
+        }
+
+        public bool hasAzucar(int cantidadDeAzucar)
+        {
+            return this.cantidadDeAzucar >= cantidadDeAzucar;
+        }
+
+        public void giveAzucar(int cantidadDeAzucar)
+        {
+            this.cantidadDeAzucar -= cantidadDeAzucar;
+        }
+
+        public int getCantidadAzucar()
+        {
+            return cantidadDeAzucar;
+        }
+    }
+}
